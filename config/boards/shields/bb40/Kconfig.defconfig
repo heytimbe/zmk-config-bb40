@@ -4,6 +4,6 @@
 if SHIELD_BB40
 
 config ZMK_KEYBOARD_NAME
-    default "BB40"
+    default "bb40"
 
 endif
