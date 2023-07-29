@@ -14,5 +14,5 @@
 ---
 include:
   - board: pillbug
-    shield: BB40
+    shield: bb40
 
