@@ -62,7 +62,7 @@
                 &trans  &kp F1   &kp F2           &kp F3      &kp F4    &kp F5  &kp F6  &kp F7     &kp F8   &kp F9        &kp F10       &kp C_PP
                 &trans  &kp F11  &kp F12          &trans      &trans    &trans  &trans  &trans     &trans   &trans                      &kp K_LOCK
                 &trans  &trans   &kp CAPS         &kp KP_NUM  &kp SLCK  &trans  &trans  &kp COMMA  &kp DOT                &kp K_VOL_UP  &kp K_MUTE
-                &trans  &trans   &kp PAUSE_BREAK  &reset                &trans          &bootloader         &kp C_BRI_DN  &kp K_VOL_DN  &kp C_BRI_UP     &trans
+                &trans  &trans   &kp PAUSE_BREAK  &sys_reset              &trans          &bootloader         &kp C_BRI_DN  &kp K_VOL_DN  &kp C_BRI_UP     &trans
 			>;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
