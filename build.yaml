@@ -13,4 +13,6 @@
 #
 ---
 include:
-  - board: bb40
+  - board: pillbug
+    shield: bb40
+
