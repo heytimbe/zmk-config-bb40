@@ -7,3 +7,8 @@ requires: [blackpill]
 features:
   - keys
   - encoder
+include:
+  - board: pillbug
+    shield: BB40
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
