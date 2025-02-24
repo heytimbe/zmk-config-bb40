@@ -3,3 +3,4 @@
 
 config SHIELD_BB40
     def_bool $(shields_list_contains,BB40)
+CONFIG_ZMK_STUDIO=y
