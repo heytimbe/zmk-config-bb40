@@ -11,7 +11,7 @@
 
 // Remove this node if you didn't build with an encoder.
 
-&encoder { status = "okay"; };
+// &encoder { status = "okay"; };
 
 / {
     keymap {
