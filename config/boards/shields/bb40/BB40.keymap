@@ -20,7 +20,7 @@
         default_layer {
             bindings = <
 &kp ESC    &kp Q     &kp W     &kp E        &kp R        &kp T  &kp Y        &kp U  &kp I     &kp O     &kp P       &kp BSPC
-&mo 2      &kp A     &kp S     &kp D        &kp F        &kp G  &kp H        &kp J  &kp K     &kp L     &kp ENTER
+&lt 2 TAB      &kp A     &kp S     &kp D        &kp F        &kp G  &kp H        &kp J  &kp K     &kp L     &kp ENTER
 &kp LSHFT  &kp Z     &kp X     &kp C        &kp V        &kp B  &kp N        &kp M  &kp FSLH  &kp UP    &kp PERIOD
 &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &lt 1 SPACE         &lt 2 SPACE         &kp LEFT  &kp DOWN  &kp RIGHT             &lt 3 C_MUTE
             >;
@@ -30,7 +30,7 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2     &kp N3   &kp N4   &kp N5  &kp N6   &kp N7     &kp N8    &kp N9     &kp N0    &kp DEL
+&kp GRAVE  &kp N1     &kp N2     &kp N3   &kp N4   &kp N5  &kp N6   &kp N7     &kp N8    &kp N9     &kp N0    &trans
 &kp PSCRN  &kp MINUS  &kp EQUAL  &trans   &trans   &trans  &trans   &kp MINUS  &kp PLUS  &kp COLON  &kp APOS
 &trans     &trans     &trans     &trans   &trans   &trans  &trans   &kp COMMA  &kp DOT   &kp PG_UP  &kp BSLH
 &trans     &trans     &trans     &kp TAB  &kp TAB          &kp TAB             &kp HOME  &kp PG_DN  &kp END            &trans
@@ -41,7 +41,7 @@
 
         raise_layer {
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR  &trans
+&kp TILDE  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR  &kp DEL
 &kp PSCRN  &kp UNDER  &kp PLUS  &trans    &trans    &trans     &trans     &kp LBRC  &kp RBRC  &kp COLON  &kp DQT
 &trans     &trans     &trans    &trans    &trans    &trans     &trans     &kp LT    &kp GT    &kp PG_UP  &kp PIPE
 &trans     &trans     &trans    &kp TAB   &kp TAB              &kp TAB              &kp HOME  &kp PG_DN  &trans            &trans
