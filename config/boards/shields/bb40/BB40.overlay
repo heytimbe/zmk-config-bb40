@@ -78,32 +78,26 @@ layer_callbacks {
         layer = <1>;
         event = "on-activation";
         bindings = <&blackpill 46 0 GPIO_ON>;
+    layer = <2>;
+        event = "on-activation";
+        bindings = <&blackpill 45 0 GPIO_ON>;
+    layer = <3>;
+        event = "on-activation";
+        bindings = <&blackpill 43 0 GPIO_ON>;
     };
     layer_off {
         layer = <1>;
         event = "on-deactivation";
         bindings = <&blackpill 46 GPIO_OFF>;
-    };
-layer_on {
-        layer = <2>;
-        event = "on-activation";
-        bindings = <&blackpill 45 0 GPIO_ON>;
-    };
-    layer_off {
+        
         layer = <2>;
         event = "on-deactivation";
         bindings = <&blackpill 45 GPIO_OFF>;
-    };
-layer_on {
-        layer = <3>;
-        event = "on-activation";
-        bindings = <&blackpill 43 0 GPIO_ON>;
-    };
-    layer_off {
+
         layer = <3>;
         event = "on-deactivation";
         bindings = <&blackpill 43 GPIO_OFF>;
     };
-};
 
+    };
 };
