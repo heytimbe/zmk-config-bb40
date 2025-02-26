@@ -74,30 +74,41 @@ gpios {
 };
 layer_callbacks {
     compatible = "elpekenin,layer-callback";
-    layer_on {
+
+    layer_on_1 {
         layer = <1>;
         event = "on-activation";
         bindings = <&blackpill 46 0 GPIO_ON>;
-    layer = <2>;
+    };
+
+    layer_on_2 {
+        layer = <2>;
         event = "on-activation";
         bindings = <&blackpill 45 0 GPIO_ON>;
-    layer = <3>;
+    };
+
+    layer_on_3 {
+        layer = <3>;
         event = "on-activation";
         bindings = <&blackpill 43 0 GPIO_ON>;
     };
-    layer_off {
+
+    layer_off_1 {
         layer = <1>;
         event = "on-deactivation";
         bindings = <&blackpill 46 GPIO_OFF>;
-        
+    };
+
+    layer_off_2 {
         layer = <2>;
         event = "on-deactivation";
         bindings = <&blackpill 45 GPIO_OFF>;
+    };
 
+    layer_off_3 {
         layer = <3>;
         event = "on-deactivation";
         bindings = <&blackpill 43 GPIO_OFF>;
     };
-
-    };
+};
 };
