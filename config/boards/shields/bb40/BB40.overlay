@@ -65,7 +65,7 @@
         led-green = &led1;
         led-blue = &led2;
     };
-
+};
     leds {
         compatible = "gpio-leds";
         status = "okay";
@@ -79,5 +79,4 @@
             gpios = <&gpio0 46 GPIO_ACTIVE_HIGH>;  
         };
     };
-};
 };
