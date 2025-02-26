@@ -8,11 +8,9 @@ manifest:
     - name: zmk-userspace
       remote: elpekenin
       revision: main
-      remote: elpekenin
-      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-      self:
+  self:
     path: config
