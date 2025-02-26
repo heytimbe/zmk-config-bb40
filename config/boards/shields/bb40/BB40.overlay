@@ -59,7 +59,7 @@
         resolution = <4>;
         status = "disabled";
     };
-{
+
     aliases {
         led-red = &led0;
         led-green = &led1;
@@ -79,5 +79,4 @@
             gpios = <&gpio0 46 GPIO_ACTIVE_HIGH>;  
         };
     };
-};
 };
