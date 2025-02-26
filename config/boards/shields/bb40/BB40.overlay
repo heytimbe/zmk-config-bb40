@@ -59,5 +59,25 @@
         resolution = <4>;
         status = "disabled";
     };
+{
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
 
+    leds {
+        compatible = "gpio-leds";
+        status = "okay";
+        led0: led_0 {
+            gpios = <&gpio0 43 GPIO_ACTIVE_HIGH>;  
+        };
+        led1: led_1 {
+            gpios = <&gpio0 45 GPIO_ACTIVE_HIGH>;  
+        };
+        led2: led_2 {
+            gpios = <&gpio0 46 GPIO_ACTIVE_HIGH>;  
+        };
+    };
+};
 };
