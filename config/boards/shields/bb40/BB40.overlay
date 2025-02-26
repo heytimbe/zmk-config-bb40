@@ -60,5 +60,50 @@
         resolution = <4>;
         status = "disabled";
     };
+gpios {
+    compatible = "gpio-leds";
+    red: red {
+        gpios = <&blackpill 43 GPIO_ACTIVE_HIGH>;
+    };
+    green: green {
+        gpios = <&blackpill 45 GPIO_ACTIVE_HIGH>;
+    };
+    blue: blue {
+        gpios = <&blackpill 46 GPIO_ACTIVE_HIGH>;
+    };
+};
+layer_callbacks {
+    compatible = "elpekenin,layer-callback";
+    layer_on {
+        layer = <1>;
+        event = "on-activation";
+        bindings = <&blackpill 46 0 GPIO_ON>;
+    };
+    layer_off {
+        layer = <1>;
+        event = "on-deactivation";
+        bindings = <&blackpill 46 GPIO_OFF>;
+    };
+layer_on {
+        layer = <2>;
+        event = "on-activation";
+        bindings = <&blackpill 45 0 GPIO_ON>;
+    };
+    layer_off {
+        layer = <2>;
+        event = "on-deactivation";
+        bindings = <&blackpill 45 GPIO_OFF>;
+    };
+layer_on {
+        layer = <3>;
+        event = "on-activation";
+        bindings = <&blackpill 43 0 GPIO_ON>;
+    };
+    layer_off {
+        layer = <3>;
+        event = "on-deactivation";
+        bindings = <&blackpill 43 GPIO_OFF>;
+    };
+};
 
 };
