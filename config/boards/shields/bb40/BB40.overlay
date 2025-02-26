@@ -62,9 +62,6 @@
     };
 gpios {
     compatible = "gpio-leds";
-    red: red {
-        gpios = <&blackpill 43 GPIO_ACTIVE_HIGH>;
-    };
     green: green {
         gpios = <&blackpill 45 GPIO_ACTIVE_HIGH>;
     };
@@ -87,12 +84,6 @@ layer_callbacks {
         bindings = <&blackpill 45 0 GPIO_ON>;
     };
 
-    layer_on_3 {
-        layer = <3>;
-        event = "on-activation";
-        bindings = <&blackpill 43 0 GPIO_ON>;
-    };
-
     layer_off_1 {
         layer = <1>;
         event = "on-deactivation";
@@ -103,12 +94,6 @@ layer_callbacks {
         layer = <2>;
         event = "on-deactivation";
         bindings = <&blackpill 45 GPIO_OFF>;
-    };
-
-    layer_off_3 {
-        layer = <3>;
-        event = "on-deactivation";
-        bindings = <&blackpill 43 GPIO_OFF>;
     };
 };
 };
