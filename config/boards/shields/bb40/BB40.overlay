@@ -73,25 +73,25 @@ layer_callbacks {
     compatible = "elpekenin,layer-callback";
 
     layer_on_1 {
-        layer = (lower_layer);
+        layer = <(lower_layer)>;
         event = "on-activation";
         bindings = <&blackpill 46 0 GPIO_ON>;
     };
 
     layer_on_2 {
-        layer = (raise_layer);
+        layer = <(raise_layer)>;
         event = "on-activation";
         bindings = <&blackpill 45 0 GPIO_ON>;
     };
 
     layer_off_1 {
-        layer = (lower_layer);
+        layer = <(lower_layer)>;
         event = "on-deactivation";
         bindings = <&blackpill 46 GPIO_OFF>;
     };
 
     layer_off_2 {
-        layer = (raise_layer);
+        layer = <(raise_layer)>;
         event = "on-deactivation";
         bindings = <&blackpill 45 GPIO_OFF>;
     };
