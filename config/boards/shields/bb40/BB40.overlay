@@ -75,13 +75,13 @@ layer_callbacks {
     layer_on_1 {
         layer = <1>;
         event = "on-activation";
-        bindings = <&gpio0 46 0 GPIO_ON>;
+        bindings = <&gpio0 46 GPIO_ON>;
     };
 
     layer_on_2 {
         layer = <2>;
         event = "on-activation";
-        bindings = <&gpio0 45 0 GPIO_ON>;
+        bindings = <&gpio0 45  GPIO_ON>;
     };
 
     layer_off_1 {
