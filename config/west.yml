@@ -9,3 +9,12 @@ manifest:
       import: app/west.yml
   self:
     path: config
+
+    manifest:
+  remotes:
+    - name: elpekenin
+      url-base: https://github.com/elpekenin
+  projects:
+    - name: zmk-userspace
+      remote: elpekenin
+      revision: main
