@@ -64,7 +64,6 @@
     aliases {
         led-red = &led0;
         led-green = &led1;
-        led-blue = &led2;
     };
 
     leds {
@@ -75,9 +74,6 @@
         };
         led1: led_1 {
             gpios = <&blackpill 45 GPIO_ACTIVE_HIGH>;  
-        };
-        led2: led_2 {
-            gpios = <&blackpill 46 GPIO_ACTIVE_HIGH>;  
         };
     };
 };
