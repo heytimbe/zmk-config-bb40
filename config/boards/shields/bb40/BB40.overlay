@@ -71,13 +71,13 @@
         compatible = "gpio-leds";
         status = "okay";
         led0: led_0 {
-            gpios = <&gpio0 43 GPIO_ACTIVE_HIGH>;  
+            gpios = <&blackpill 43 GPIO_ACTIVE_HIGH>;  
         };
         led1: led_1 {
-            gpios = <&gpio0 45 GPIO_ACTIVE_HIGH>;  
+            gpios = <&blackpill 45 GPIO_ACTIVE_HIGH>;  
         };
         led2: led_2 {
-            gpios = <&gpio0 46 GPIO_ACTIVE_HIGH>;  
+            gpios = <&blackpill 46 GPIO_ACTIVE_HIGH>;  
         };
     };
 };
